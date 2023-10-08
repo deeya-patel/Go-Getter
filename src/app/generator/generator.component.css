@@ -1,0 +1,22 @@
+body {
+    font-family: "Courier", monospace;
+    color: #000000;
+    line-height: 1.4;
+    padding: 0 1em;
+    background-color: #ffb2b2;
+    text-align: center;
+  }
+
+.inner { 
+    font-size: 22px;
+    margin: 150px auto; 
+    top:50%;
+    align-items: center;
+}
+  
+#generate {
+    top:55%;
+    background-color: #C0C0C0;
+    font-family: "Courier", monospace;
+    font-size: 18px;
+}

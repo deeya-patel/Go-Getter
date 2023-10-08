@@ -1,0 +1,71 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Find some quotes to get you motivated!</title>
+        <!--<link rel="stylesheet" href="styles.css">-->
+        <!--<script src="script.js"></script>-->
+    </head>
+    <body>
+       <div class="outer-container">
+            <h1 id = "header">Need some motivational quotes to get you through your to-do list? Find some below!</h1>
+            <div class = "inner">
+                <p id="quotes"></p>
+                <p id="author"></p>
+                <button id="generate">New Quote</button>
+            </div>
+       </div>
+       <script>
+        const generateQuote = function() {
+        const quotes = [
+        {
+            quote: "All our dreams can come true, if we have the courage to pursue them.",
+            author: "- Walt Disney"
+        },
+        {
+            quote: "The secret of getting ahead is getting started.",
+            author: "- Mark Twain"
+        },
+        {
+            quote: "Don’t limit yourself. Many people limit themselves to what they think they can do. You can go as far as your mind lets you. What you believe, remember, you can achieve..",
+            author: "- Mary Kay Ash"
+        },
+        {
+            quote: "The best time to plant a tree was 20 years ago. The second best time is now",
+            author: "- Chinese Proverb"
+        },
+        {
+            quote: "It’s hard to beat a person who never gives up.",
+            author: "- Babe Ruth"
+        },
+        {
+            quote: "If people are doubting how far you can go, go so far that you can’t hear them anymore.",
+            author: "- Michele Ruiz"
+        },
+        {
+            quote: "Impossible is just an opinion.",
+            author: "- Paulo Coelho"
+        },
+        {
+            quote: "Happiness is not something ready made. It comes from your own actions.",
+            author: "- Dalai Lama XIV"
+        },
+        {
+            quote: "You’ve gotta dance like there’s nobody watching, love like you’ll never be hurt, sing like there’s nobody listening, and live like it’s heaven on earth.",
+            author: "- William W. Purkey"
+        }
+    ];
+
+        let arrayIndex = Math.floor(Math.random() * quotes.length);
+        document.getElementById("quotes").innerHTML = quotes[arrayIndex].quote;
+        document.getElementById("author").innerHTML = quotes[arrayIndex].author;
+
+    }
+    window.onload = function() {
+        generateQuote();
+        document.getElementById("generate").addEventListener('click', generateQuote);
+    }
+       </script>
+    </body>
+</html>
