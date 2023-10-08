@@ -1,0 +1,36 @@
+
+<mat-chip-listbox>
+    
+    <mat-chip-option id="chip" (click)="selected()" >All</mat-chip-option>
+    <mat-chip-option id="chip" (click)="schoolSelected()" >School</mat-chip-option>
+    <mat-chip-option id="chip" (click)="selected()" >Work</mat-chip-option>
+    <mat-chip-option id="chip" (click)="selected()" >Health</mat-chip-option>
+    <mat-chip-option id="chip" (click)="selected()" >Clubs</mat-chip-option>
+    <mat-chip-option id="chip" (click)="selected()" >Sports</mat-chip-option>
+    <mat-chip-option id="chip" (click)="selected()" >Extracurriculars</mat-chip-option>
+    <mat-chip-option id="chip" (click)="selected()" >Career</mat-chip-option>
+</mat-chip-listbox>
+<div [style.display]="shows[0] ? 'block' : 'none'">
+    <app-list></app-list>
+</div>
+<div [style.display]="shows[1] ? 'block' : 'none'">
+    <app-list></app-list>
+</div>
+<div [style.display]="shows[2] ? 'block' : 'none'">
+    <app-list></app-list>
+</div>
+<div [style.display]="shows[3] ? 'block' : 'none'">
+    <app-list></app-list>
+</div>
+<div [style.display]="shows[4] ? 'block' : 'none'">
+    <app-list></app-list>
+</div>
+<div [style.display]="shows[5] ? 'block' : 'none'">
+    <app-list></app-list>
+</div>
+<div [style.display]="shows[6] ? 'block' : 'none'">
+    <app-list></app-list>
+</div>
+<div [style.display]="shows[7] ? 'block' : 'none'">
+    <app-list></app-list>
+</div>
